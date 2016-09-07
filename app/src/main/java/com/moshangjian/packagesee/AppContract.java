@@ -27,5 +27,6 @@ public class AppContract {
         public String signInco;
         public String packageName;
         public Drawable icon;
+        public long firstInstallTime;
     }
 }

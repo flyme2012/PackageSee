@@ -7,7 +7,7 @@
     tools:showIn="@layout/activity_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.moshangjian.packagesee.Home_Activity">
+    tools:context=".HomeActivity">
 
     <TextView
         android:layout_width="wrap_content"

@@ -147,7 +147,7 @@ public class AppInfoFragment extends Fragment implements AppContract.View {
             holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
-
+                    copy(appInfo.packageName);
                     return true;
                 }
             });

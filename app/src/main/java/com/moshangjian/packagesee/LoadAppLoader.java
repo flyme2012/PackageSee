@@ -15,6 +15,7 @@ import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -53,11 +54,13 @@ public class LoadAppLoader extends AsyncDataLoader<Map<Integer,List<AppContract.
             appInfo.title = (String) applicationInfo.loadLabel(pm);
             appInfo.signInco = getSingInfo(packageName);
             appInfo.icon = applicationInfo.loadIcon(pm);
+            appInfo.firstInstallTime = packageInfo.firstInstallTime;
             if (isSystemApp(applicationInfo)) {
                 systemAppList.add(appInfo);
             } else {
                 perAppList.add(appInfo);
             }
+
         }
         map.put(0,perAppList);
         map.put(1,systemAppList);

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PackageSee</string>
+    <string name="app_name">包名查看器</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
